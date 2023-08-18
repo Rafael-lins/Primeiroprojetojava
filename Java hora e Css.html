@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data e Hora em JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #RafaCoderhouse {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h2>JavaScript</h2>
+
+<button type="button" onclick="MostrarDataHora()">
+    Clique aqui para ver a Data e a Hora.
+</button>
+
+<p id="RafaCoderhouse"></p>
+
+<script>
+function MostrarDataHora() {
+    var dataHoraAtual = new Date();
+    var elemento = document.getElementById("RafaCoderhouse");
+    elemento.innerHTML = "Data e Hora: " + dataHoraAtual;
+}
+</script>
+
+</body>
+</html>
